@@ -1,0 +1,160 @@
+.pglist-main {
+  min-height: 100vh;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #f4f7fb, #e9eff8);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pglist-main h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 30px;
+  color: #1f2933;
+}
+
+.pg-grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* always one card per row */
+  gap: 22px;
+  max-width: 1000px;             /* keeps cards centered & readable */
+  margin: auto;
+}
+
+.pg-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+}
+
+.pg-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.pg-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.pg-info p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #374151;
+}
+
+.room-title {
+  margin: 14px 0 8px;
+  font-size: 17px;
+  color: #2563eb;
+}
+
+/* ===== Room Table ===== */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+.room-table th {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 8px;
+  text-align: center;
+}
+
+.room-table td {
+  padding: 7px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.room-table tr:hover {
+  background: #f8fafc;
+}
+
+/* ===== Room Buttons ===== */
+
+.room-actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 2px;
+  color: white;
+}
+
+.room-edit {
+  background: #3b82f6;
+}
+
+.room-delete {
+  background: #ef4444;
+}
+
+.room-actions button:hover {
+  opacity: 0.85;
+}
+
+/* ===== Bottom PG Buttons ===== */
+
+.pg-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pg-actions button {
+  flex: 1;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+.pg-actions button:nth-child(2) {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.pg-actions .danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.pg-actions button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.no-rooms {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 600px) {
+  .pg-actions {
+    flex-direction: column;
+  }
+
+  .pglist-main h2 {
+    font-size: 24px;
+  }
+}

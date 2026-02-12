@@ -1,0 +1,92 @@
+.edit-room-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.edit-room-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.success-msg {
+  text-align: center;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.edit-room-form {
+  margin-top: 10px;
+}
+
+.edit-room-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.edit-room-table td {
+  padding: 10px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.edit-room-table input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.edit-room-table input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.update-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  opacity: 0.9;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 60px;
+}

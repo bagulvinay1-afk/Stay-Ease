@@ -1,0 +1,82 @@
+.terms-main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #e9eff8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.terms-main h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #1f2933;
+}
+
+.terms-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-card label {
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: #0f172a;
+}
+
+.terms-card select,
+.terms-card textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.terms-card select:focus,
+.terms-card textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+.terms-card textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.terms-card button {
+  margin-top: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  transition: 0.25s;
+}
+
+.terms-card button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.terms-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .terms-main h2 {
+    font-size: 24px;
+  }
+}

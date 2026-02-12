@@ -1,0 +1,170 @@
+/* ===== PAGE BASE ===== */
+.findpg-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* ===== TOP SEARCH BAR ===== */
+/* ===== TOP SEARCH BAR ===== */
+.findpg-topbar {
+  background: linear-gradient(135deg, #0f766e, #14b8a6); /* teal / professional */
+  padding: 22px 16px;   /* ⬅ reduced height */
+  text-align: center;
+  color: white;
+}
+
+.findpg-topbar h2 {
+  font-size: 22px;      /* ⬅ smaller title */
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  padding: 12px 14px;
+  width: 230px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #facc15;
+  color: #1e293b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #fde047;
+  transform: translateY(-1px);
+}
+
+/* ===== PG LIST AREA ===== */
+.pg-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.loading, .empty {
+  text-align: center;
+  font-size: 18px;
+  color: #64748b;
+  margin-top: 50px;
+}
+
+/* ===== GRID ===== */
+.pg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 28px;
+}
+
+/* ===== CARD ===== */
+.pg-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.pg-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* ===== IMAGE ===== */
+.pg-card img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== CARD BODY ===== */
+.pg-info {
+  padding: 16px 16px 18px;
+}
+
+.pg-info h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.4;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* ===== FOOTER ===== */
+.pg-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.pg-footer span {
+  font-size: 17px;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.pg-footer button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pg-footer button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
+  .findpg-topbar h2 {
+    font-size: 22px;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+
+  .pg-footer span {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,91 @@
+.add-room-container {
+  padding: 50px;
+  background: #f8fafc;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+.add-room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.add-room-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.plus-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.back-btn {
+  border: none;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2563eb;
+  padding: 4px 8px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.add-room-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-room-form input {
+  padding: 8px 10px;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  font-size: 13px;
+  width: 150px;
+}
+
+.add-room-form input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* Add Button */
+.add-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-room-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-room-form input,
+  .add-btn {
+    width: 100%;
+  }
+}

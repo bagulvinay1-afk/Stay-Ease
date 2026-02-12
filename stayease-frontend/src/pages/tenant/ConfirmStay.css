@@ -1,0 +1,106 @@
+.confirm-container {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.confirm-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirm-header h2 {
+  color: #1e293b;
+}
+
+.confirm-card {
+  background: white;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 12px;
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.left-section {
+  flex: 2;
+}
+
+.right-section {
+  flex: 1;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pg-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tags span {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.box {
+  margin-top: 20px;
+}
+
+.radio {
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.price-row,
+.price-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.price-total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pay-btn {
+  width: 100%;
+  background: #22c55e;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #16a34a;
+}
+
+.contact-btn {
+  width: 100%;
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px;
+}

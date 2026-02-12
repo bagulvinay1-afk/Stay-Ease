@@ -1,0 +1,151 @@
+/* Main page background */
+.addpg-main {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e0f2fe, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main card */
+.addpg-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 26px 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Headings */
+.addpg-card h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.addpg-card p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+/* Form layout */
+.addpg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 13px;
+  color: #334155;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 9px 11px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #dbeafe;
+}
+
+/* Row layout */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Added room list */
+.room-list {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.room-list h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.room-item {
+  background: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Submit button */
+.addpg-btn {
+  margin-top: 18px;
+  padding: 11px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.addpg-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(37,99,235,0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 650px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .addpg-card {
+    padding: 20px 16px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

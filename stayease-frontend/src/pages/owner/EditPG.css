@@ -1,0 +1,93 @@
+/* ===== Page Wrapper ===== */
+.edit-pg-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #e9eff8);
+  padding: 30px 15px;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Back Button ===== */
+.back-btn {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* ===== Heading ===== */
+.edit-pg-container h2 {
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+/* ===== Form Card ===== */
+.edit-pg-form {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* ===== Inputs & Select ===== */
+.edit-pg-form input,
+.edit-pg-form select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.2s;
+}
+
+.edit-pg-form input:focus,
+.edit-pg-form select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* ===== Update Button ===== */
+.edit-pg-form button {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  transition: 0.3s;
+}
+
+.edit-pg-form button:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .edit-pg-form {
+    padding: 18px;
+  }
+
+  .edit-pg-container h2 {
+    font-size: 22px;
+  }
+}
